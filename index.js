@@ -13,3 +13,21 @@ const freelancers = [
   {name: "Shirou Emiya", occupation: "sword maker", price: "Free"},
   {name: "Walter White", occupation: "chemist", price: 400}
 ];
+
+function renderFreelancers() {
+  let freelancersList = document.getElementById("freelancer-list")
+
+  for (let i = 0; i < freelancers.length; i++) {
+    let currentFreelancers = freelancers[i]
+
+    let freelancerDiv = document.createElement("div")
+    freelancerDiv.className = "freelancer"
+
+    freelancerDiv.innerHTML = `<h1>${currentFreelancers.name}</h1>
+                               <h3>${currentFreelancers.occupation}</h3>
+                               <h3>${currentFreelancers.price}</h3>`
+    freelancersList.appendChild(freelancerDiv)
+  }
+}
+
+renderFreelancers()
