@@ -1,0 +1,12 @@
+#freelancer-list {
+  display:block; 
+  /* flex-direction: row; */
+  align-items: center;
+  width: 250px;
+  margin: 50px;
+}
+
+div {
+  border: 2px solid black;
+  flex-direction: row;
+}
